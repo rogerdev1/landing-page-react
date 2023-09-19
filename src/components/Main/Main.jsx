@@ -21,14 +21,17 @@ const Main = () => {
                     <i className="fa-solid fa-star"></i>
                 </span>
                 <p className="describeShoe">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has survived
-                    not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged
+                    A atemporalidade do Air Jordan 4 Retro "Infrared"!
+                    Este ícone da cultura sneaker traz a mistura perfeita de estilo
+                    clássico e a energia vibrante do vermelho "Infrared". O design
+                    elegante, com detalhes em relevo e o logotipo Jumpman,
+                    é simplesmente inconfundível. Um verdadeiro clássico da moda
+                    que nunca sai de moda.
                 </p>
-                <button className="addCart">ADD ON CART</button>
+                <a href="https://www.nike.com.br/snkrs/air-jordan-4-022452.html?cor=7T&utm_source=GP_search&utm_medium=Cpc&utm_campaign=Jordan_Brand&utm_content=DSA_Jordan&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBdXKsajEaXUJCQJiYsUahLmtpkBdcQzBxTbRO9wFq8_PAG_533BkaRoCj2kQAvD_BwE&utm_referrer=https://www.google.com/"
+                    className="addCart">
+                        ADQUIRA AGORA!
+                </a>
             </div>
             <div className="rightSide">
                 <img src={Jordan4} alt="Foto Tênis Jordan 4 Retro" />
