@@ -1,0 +1,93 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+
+main{
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; max-width: 1400px;
+    height: 100vh;
+    margin: 0px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: -webkit-linear-gradient(332deg, #1f1f1f, #56565689, #db0101);
+}
+main .leftSide{
+    width: 40%;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+    padding-left: 50px;
+    text-align: justify;
+    color: #e7e7e7;
+}
+
+main .leftSide span.titleShoe{
+    display: flex; flex-direction: column;
+    font-size: 85px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+main .leftSide span.titleShoe span.marcaShoe{
+    text-align: left;
+    padding-left: 20px;
+}
+
+main .leftSide span.titleShoe span.modelShoe{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 8px;
+
+    background: -webkit-linear-gradient(#9d9d9d, #db0101);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+main .leftSide span.valueShoe{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+main .leftSide .starShoe, h2{
+    text-align: left;
+    width: 100%;
+}
+main .leftSide .starShoe{ color: gold; font-size: small;}
+
+main .rightSide{
+    width: 60%;
+    height: 100%;
+    padding: 0 50px;
+    display: flex; align-items: center;
+}
+main .rightSide img{
+    min-width: 650px;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: float 4s infinite ease-in-out;
+}
+@keyframes float {
+    0%{
+        transform:translateY(0px);
+    }50%{
+        transform:translateY(15px);
+    }100%{
+        transform:translateY(0px);
+    }
+}
+
+button.addCart{
+    border: none; border-radius: 20px;
+    padding: 10px 30px;
+    background-color: #ca0101;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+
+}button.addCart:hover{
+    background-color: #780202;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+
+}

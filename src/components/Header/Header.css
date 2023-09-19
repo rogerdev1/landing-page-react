@@ -1,0 +1,142 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+header{
+    display: flex; align-items: center; flex-direction: column;
+    padding: 10px 0px;
+    box-shadow: 5px 1px 10px rgb(30, 30, 30);
+}
+header div.firstRow{
+    display: flex; align-items: center;
+    width: 100%;
+}
+
+header div.firstRow .areaLogo{
+    margin-right: auto;
+    padding-left: 25px;
+}
+
+header div.firstRow i{
+    color: #fff;
+}
+
+.favBagMobile i{
+    padding-left: 15px;
+}.favBag{
+    display: none;
+}
+
+header nav ul{
+    display: none; align-items: center; justify-content: space-around;
+}
+header nav .fa-bars{
+    padding: 0px 15px;
+}
+header nav ul li{
+    padding: 0px 5px;
+}
+
+header .secondRow{
+    width: 90%;
+}
+
+header form{
+    display: flex; align-items: center; justify-content: center;
+    width: 100%;
+}
+
+header form input.searchFormHeader{
+    display: flex;
+    padding: 5px 15px;
+    padding-left: 25px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.171);
+}
+form .fa-search{
+    color: gray;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: small;
+}
+
+@media (min-width: 768px) {
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header div.firstRow{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    .favBagMobile i{
+        display: none;
+    }.favBag{
+        display: block;
+        color: #e7e7e7;
+        background-color: rgba(128, 128, 128, 0.322);
+        padding: 8px 5px;
+        border-radius: 50%;
+    }.favBag span{
+        padding-right: 5px;
+    }
+
+    header nav ul{
+        display: flex; justify-content: space-around;
+    }
+    header nav ul li{
+        padding: 0px 20px;
+    }header nav ul li a{
+        color: #ebebeb;
+    }header nav ul li:hover a{
+        color: #ebebeb;
+        text-decoration:underline;
+        text-underline-offset: 8px;
+        transition: .5s ease-in-out;
+    }
+    header .firstRow .fa-solid{
+        display: none;
+        color: #fff;
+    } header .fa-solid.fa-search{
+        display: flex;
+        color: gray;
+        margin-bottom: -20px;
+        margin-left: 5px;
+    }
+
+    header .secondRow {
+        width: 50%;
+        display: flex; align-items: center; justify-content: space-around;
+    }
+
+    header form{
+        width: 50%;
+        position: relative;
+    }
+    header form input.searchFormHeader{
+        display: block;
+        padding: 5px 15px;
+        padding-left: 25px;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+    }
+    form .fa-search{
+        color: gray;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        font-size: small;
+    }
+    header .areaLogo{
+        margin: 0;
+    }
+}
