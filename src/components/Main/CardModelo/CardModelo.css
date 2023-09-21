@@ -1,0 +1,53 @@
+.outrosModelos{
+    width: 100%;
+    display: flex; align-items: center;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+.outrosModelos .cardOffer{
+    height: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.463);
+    background-color: #780202;
+    color: #cbcbcb;
+    border: 1px #cbcbcb solid;
+
+}
+.outrosModelos .cardTitle{
+    background-color: #313131;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 200px;
+}.outrosModelos .cardBody{
+    width: 100%;
+    height: 200px;
+    display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+    padding-top: 50px;
+    border-top: 1px #cbcbcb8a solid;
+
+}
+
+.outrosModelos .cardOffer .tenis img,
+.outrosModelos .cardOffer .tenis img{
+    transform:rotateY(180deg) rotate(30deg);
+    margin-top: -40px;
+}.outrosModelos .cardTitle .marca{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.outrosModelos .addCart{
+    border: none; border-radius: 20px;
+    padding: 10px 30px; margin: 15px 0px;
+    background-color: #ca0101;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+
+}.outrosModelos .addCart:hover{
+    background-color: #780202;
+    transform: scale(1.05);
+}

@@ -4,18 +4,23 @@
 
 
 main{
-    display: flex; align-items: center; justify-content: center;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
     width: 100%; max-width: 1400px;
     margin: 0px auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+main .firstRow{
+    display: flex; align-items: center; justify-content: center;
+    padding: 150px 0px;
+}
+
 main .leftSide{
     width: 40%;
     display: flex; flex-direction: column; align-items: center; justify-content: space-around;
     padding-left: 50px;
     text-align: justify;
     color: #e7e7e7;
-    animation: slideToRight 3s;
 }
 
 main .leftSide span.titleShoe{
@@ -93,6 +98,69 @@ main .rightSide img{
         opacity: 1;
     }
 }
-@media (min-width: 768px) {
+
+.titleSection{
+    font-family: 'Black Ops One', cursive, 'Roboto', sans-serif, 'Comic Neue', cursive, 'Caveat', cursive;
+    font-size: 50px;
+    color: #e7e7e7;
+    letter-spacing: 5px;
+}
+
+main .secondRow section {
+    display: flex; align-items: center;
+    width: 100%;
+}
+main .secondRow  .card-detalhe-design img,
+main .secondRow .card-material img{
+    width: 350px;
+}
+main .secondRow  .card-cores,
+main .secondRow  .card-material,
+main .secondRow  .card-detalhe-design{
+    margin-top: -120px;
+}
+.img-card-details{
+    width: 40%;
+}.text-card-details{
+    width: 60%;
+    text-align: center;
+    font-family: 'Black Ops One', cursive, 'Roboto', sans-serif, 'Comic Neue', cursive, 'Caveat', cursive;
+    color: #e7e7e7;
+}.text-card-details .cardBody{
+    width: 95%;
+    padding-left: 50px;
+}.text-card-details .cardTitle {
+    margin-bottom: 20px;
+    font-size: xx-large;
+    background: -webkit-linear-gradient(#ffffff, #313131);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+main .secondRow .card-design img{
+    transform: rotate(340deg);
+    margin-left: -80px;
+}
+
+.card-detalhe-design, .card-material{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+
+
+main .thirddRow{
+    display: flex; flex-direction: column;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #78020222;
+}main .thirddRow section{
+    display: flex; align-items: center;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
 
 }
