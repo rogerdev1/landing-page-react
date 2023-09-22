@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import './Main.css'
 import Jordan4 from './assets/img/air-jordan-4.png'
 import detalhe1Jordan from './assets/img/img-detalhe-air-jordan.png'
@@ -12,26 +12,13 @@ import logoJordan from './assets/img/jordan-2-logo-svgrepo-com.svg'
 import CardModelo from "./CardModelo/CardModelo";
 import CardDetalhe from "./CardDetalhes/CardDetalhe";
 
-const ScrollProps = {
-    layout: {
-        height: 0,
-    },
-    content: {
-        y: 0,
-    },
-    size: {
-        height: 0
-    }
-}
-
 
 const Main = ({ addProdutoCarrinho }) => {
 
     return (
-        <main  onScroll={console.log(window.scrollY)}>
+        <main>
             <div className="firstRow">
                 <div className="leftSide">
-                    {/* <span className="valueShoe">$200</span> */}
                     <span className="titleShoe">
                         <span className="marcaShoe">Air Jordan 4 Retro</span>
                         <span className="modelShoe"> INFRARED</span>

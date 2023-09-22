@@ -12,7 +12,7 @@ main{
 
 main .firstRow{
     display: flex; align-items: center; justify-content: center;
-    padding: 150px 0px;
+    padding: 180px 0px;
 }
 
 main .leftSide{

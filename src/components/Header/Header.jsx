@@ -1,9 +1,19 @@
 import React from "react";
 import './Header.css'
 import logoNike from './nike.png'
+import Carrinho from '../Carrinho/Carrinho'
 
 const Header = props => {
 
+    const { carrinho } = props
+
+    const abrirCarrinho = ()=>{
+        document.querySelector('.favBag').addEventListener('click', () => {
+            document.querySelector('.Carrinho').style.display = 'block'
+            document.querySelector('.Carrinho').style.marginLeft = '0px'
+    })
+
+    }
 
     return(
         <header>
@@ -37,11 +47,13 @@ const Header = props => {
                     </label>
                     <input type="text" name="searchFormHeader" id="searchFormHeader" className="searchFormHeader" placeholder="Seacrh" />
                 </form>
-                <div className="favBag">
+                <div className="favBag" onClick={abrirCarrinho}>
                     <span>{props.qtdCarrinho}</span>
                     <i className="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
+            <Carrinho items={carrinho} />
+
         </header>
     )
 }
