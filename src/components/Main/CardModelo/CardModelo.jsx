@@ -1,7 +1,13 @@
 import React from "react";
 import './CardModelo.css'
 
-const CardModelo = props => {
+const CardModelo = (props) => {
+    const {addProdutoCarrinho} = props
+
+    const handleAddCarrinhoClick = () => {
+        // Quando o botão for clicado, chame a função passada como prop
+        addProdutoCarrinho();
+    };
 
     return (
         <div className="outrosModelos">
@@ -17,9 +23,11 @@ const CardModelo = props => {
                 <div className="cardBody">
                     <h2>{props.nomeTenis}</h2>
                     <p>R$ {props.valorTenis}</p>
-                    <a href="/" className="addCart">ADD TO CART</a>
+                    <button
+                        className="addCart"
+                        onClick={handleAddCarrinhoClick}>ADD TO CART
+                    </button>
                 </div>
-                <div className="cardFooter"></div>
             </div>
         </div>
 

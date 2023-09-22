@@ -2,13 +2,13 @@ import React from "react";
 import './Header.css'
 import logoNike from './nike.png'
 
-const Header = () => {
+const Header = props => {
     return(
         <header>
             <div className="firstRow">
-                <div className="areaLogo">
+                <a href="https://www.nike.com.br/" className="areaLogo">
                     <img src={logoNike} alt="logo da marca" width='40px' />
-                </div>
+                </a>
                 <div className="favBagMobile">
                     <i className="fa-regular fa-heart"></i>
                     <i class="bi bi-bag"></i>
@@ -36,8 +36,8 @@ const Header = () => {
                     <input type="text" name="searchFormHeader" id="searchFormHeader" className="searchFormHeader" placeholder="Seacrh" />
                 </form>
                 <div className="favBag">
-                    <span>0</span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>{props.qtdCarrinho}</span>
+                    <i className="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
         </header>

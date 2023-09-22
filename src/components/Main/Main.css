@@ -104,6 +104,29 @@ main .rightSide img{
     font-size: 50px;
     color: #e7e7e7;
     letter-spacing: 5px;
+    animation: eletro infinite 5s ease-in-out;
+}
+
+@keyframes eletro {
+    0%{
+        opacity: 1;
+    }10%{
+        opacity: 0;
+    }11%{
+        opacity: 1;
+    }50%{
+        opacity: 0;
+    }51%{
+        opacity: 1;
+    }52%{
+        opacity: 0;
+    }53%{
+        opacity: 1;
+    }99%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
 
 main .secondRow section {
@@ -118,23 +141,6 @@ main .secondRow  .card-cores,
 main .secondRow  .card-material,
 main .secondRow  .card-detalhe-design{
     margin-top: -120px;
-}
-.img-card-details{
-    width: 40%;
-}.text-card-details{
-    width: 60%;
-    text-align: center;
-    font-family: 'Black Ops One', cursive, 'Roboto', sans-serif, 'Comic Neue', cursive, 'Caveat', cursive;
-    color: #e7e7e7;
-}.text-card-details .cardBody{
-    width: 95%;
-    padding-left: 50px;
-}.text-card-details .cardTitle {
-    margin-bottom: 20px;
-    font-size: xx-large;
-    background: -webkit-linear-gradient(#ffffff, #313131);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
 }
 main .secondRow .card-design img{
     transform: rotate(340deg);

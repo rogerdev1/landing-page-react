@@ -30,6 +30,7 @@ header div.firstRow i{
     padding-left: 15px;
 }.favBag{
     display: none;
+    cursor: pointer;
 }
 
 header nav ul{
@@ -72,6 +73,9 @@ form .fa-search{
     header{
         flex-direction: row;
         justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
     header div.firstRow{
         display: flex;
@@ -86,6 +90,8 @@ form .fa-search{
         background-color: rgba(128, 128, 128, 0.322);
         padding: 8px 5px;
         border-radius: 50%;
+    }.favBag:hover{
+        background-color: rgba(250, 78, 78, 0.322);
     }.favBag span{
         padding-right: 5px;
     }

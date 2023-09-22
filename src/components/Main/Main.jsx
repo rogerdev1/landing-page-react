@@ -13,7 +13,7 @@ import CardModelo from "./CardModelo/CardModelo";
 import CardDetalhe from "./CardDetalhes/CardDetalhe";
 
 
-const Main = () => {
+const Main = ({ addProdutoCarrinho }) => {
 
     return (
         <main>
@@ -53,7 +53,7 @@ const Main = () => {
                 <section className='card-design'>
                     <CardDetalhe
                         imagemDetalheTenis={detalhe4Jordan}
-                        tituloDetalhe='Detalhes do Design'
+                        tituloDetalhe='Design'
                     >
                         O Air Jordan 4 Retro Infrared possui um design de cano médio,
                         com uma silhueta que se destaca por suas linhas limpas e
@@ -77,7 +77,7 @@ const Main = () => {
                 <section className='card-cores'>
                     <CardDetalhe
                         imagemDetalheTenis={detalhe5Jordan}
-                        tituloDetalhe='Detalhes do Design'
+                        tituloDetalhe='Cores'
                     >
                         A cor "Infrared" se refere à tonalidade vermelha que é um dos principais
                         destaques deste tênis. O vermelho brilhante é usado nas áreas do calcanhar
@@ -89,7 +89,7 @@ const Main = () => {
                 <section className='card-material'>
                     <CardDetalhe
                         imagemDetalheTenis={detalhe1Jordan}
-                        tituloDetalhe='Detalhes do Design'
+                        tituloDetalhe='Material'
                     >
                         Feito para impressionar, o Air Jordan 4 Retro "Infrared" é uma obra-prima em matéria
                         de materiais premium. Sua parte superior é adornada com couro de alta qualidade
@@ -107,18 +107,21 @@ const Main = () => {
                         imagemTenis={detalhe6Jordan}
                         nomeTenis='Infrared'
                         valorTenis='1.200,00'
+                        addProdutoCarrinho={addProdutoCarrinho}
                     />
                     <CardModelo
                         imagemMarca={logoJordan}
                         imagemTenis={detalhe7Jordan}
                         nomeTenis='Military'
                         valorTenis='1.149,00'
+                        addProdutoCarrinho={addProdutoCarrinho}
                     />
                     <CardModelo
                         imagemMarca={logoJordan}
                         imagemTenis={detalhe8Jordan}
                         nomeTenis='Off White'
                         valorTenis='1.249,00'
+                        addProdutoCarrinho={addProdutoCarrinho}
                     />
                 </section>
             </article>
