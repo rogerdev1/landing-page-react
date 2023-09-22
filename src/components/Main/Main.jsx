@@ -12,11 +12,23 @@ import logoJordan from './assets/img/jordan-2-logo-svgrepo-com.svg'
 import CardModelo from "./CardModelo/CardModelo";
 import CardDetalhe from "./CardDetalhes/CardDetalhe";
 
+const ScrollProps = {
+    layout: {
+        height: 0,
+    },
+    content: {
+        y: 0,
+    },
+    size: {
+        height: 0
+    }
+}
+
 
 const Main = ({ addProdutoCarrinho }) => {
 
     return (
-        <main>
+        <main  onScroll={console.log(window.scrollY)}>
             <div className="firstRow">
                 <div className="leftSide">
                     {/* <span className="valueShoe">$200</span> */}

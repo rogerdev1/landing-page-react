@@ -3,31 +3,67 @@
     list-style: none;
     text-decoration: none;
 }
+
 input:focus, textarea:focus{
     outline: none;
 }
 footer{
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 20px 10px 20px;
+}
+Footer .firstRow{
+    display: flex; justify-content: space-around;
+    text-align: left;
+    padding: 20px;
+}Footer .firstRow div:nth-child(-n+3){
+    display: flex; flex-direction: column;
+    text-align: left;
+    color: #d7d7d7;
+}
+footer .firstRow span{ margin-bottom: 10px; display: block;}
+Footer .firstRow a{
+    color: #d7d7d7;
 }
 
-.infoCriador {
+footer .firstRow .ajuda a,
+footer .firstRow .sobre a{
+    font-size: small;
+}
+
+footer .firstRow div:nth-child(2n+4){
+    color: #d7d7d7;
+}footer .firstRow div:nth-child(2n+4) i{
+    padding: 5px;
+    font-size: xx-large;
+}
+
+footer .secondRow{
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+footer .secondRow .infoCriador {
     display: flex; align-items: center; text-align: left;
 
-}.infoCriador span{
+}footer .secondRow .infoCriador span{
     display: flex; flex-direction: column;
     padding-left: 5px;
     color: #d7d7d7; font-weight:lighter; font-size: small;
 }
-.fotoCriador{
+footer .secondRow .fotoCriador{
     width: 80px;
     border-radius: 50%;
 }
 
-.redesCriador a{
-    color: #d7d7d7; font-weight: bold; font-size: small
+footer .secondRow .redesCriador a{
+    color: #d7d7d7; font-weight: bold; font-size: small;
 }
-.redesCriador i{
+footer .secondRow .redesCriador i{
     padding: 0px 11px;
     font-size: 20px;
+}
+
+.mensagemFooter{
+    color: #d7d7d7; font-weight:lighter; font-size: x-small;
+    text-align: left;
+    width: 100%;
+    padding-top: 5px;
 }

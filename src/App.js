@@ -13,16 +13,14 @@ function App() {
     setQtdCarrinho(qtdCarrinho + 1);
   };
 
-  return (
-    <div className="App">
-      <Header
-        qtdCarrinho={qtdCarrinho}
-      />
-      <button
-        onClick={handleAddCarrinho}
-      >ADDDDDDDDDDDDDDDDDDDDDD</button>
 
-      <Main addProdutoCarrinho={handleAddCarrinho} />
+
+
+  return (
+
+    <div className="App">
+      <Header qtdCarrinho={qtdCarrinho}/>
+      <Main addProdutoCarrinho={handleAddCarrinho}/>
       <Footer/>
     </div>
   );

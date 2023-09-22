@@ -3,6 +3,8 @@ import './Header.css'
 import logoNike from './nike.png'
 
 const Header = props => {
+
+
     return(
         <header>
             <div className="firstRow">
@@ -17,13 +19,13 @@ const Header = props => {
                     <i className="fa-solid fa-bars"></i>
                     <ul className="navbarMenu">
                         <li className="navbarItem">
-                            <a href="/" className="navbarLink" >Item1</a>
+                            <a href="https://www.nike.com.br/nav?sorting=DescReleaseDate" className="navbarLink">Lançamentos</a>
                         </li>
                         <li className="navbarItem">
-                            <a href="/" className="navbarLink">Item2</a>
+                            <a href="https://www.nike.com.br/nav/ofertas/emoferta" className="navbarLink">Ofertas</a>
                         </li>
                         <li className="navbarItem">
-                            <a href="/" className="navbarLink">Item3</a>
+                            <a href="https://www.nike.com.br/snkrs" className="navbarLink" >SNKRS</a>
                         </li>
                     </ul>
                 </nav>
