@@ -67,3 +67,16 @@ footer .secondRow .redesCriador i{
     width: 100%;
     padding-top: 5px;
 }
+
+
+@media (max-width: 767.98px){
+    footer .firstRow{ flex-direction: column; }
+    footer .firstRow div{margin: 10px 0; }
+    footer .firstRow span{ margin-bottom: 5px; display: block;}
+
+    footer .secondRow{
+        display: flex; align-items: center; justify-content: space-between;
+    }
+    footer .secondRow .infoCriador {text-align: center; flex-direction: column; }
+    .mensagemFooter{  text-align: center; }
+}

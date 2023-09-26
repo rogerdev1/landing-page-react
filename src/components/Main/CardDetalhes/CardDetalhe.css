@@ -15,3 +15,36 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
 }
+
+@media (min-width: 768px) and (max-width: 1150px){
+
+    main .secondRow .img-card-details img{
+        width: 400px;
+    }
+
+
+}
+@media (max-width: 767.98px) {
+
+    main .secondRow .img-card-details img{
+        width: 200px;
+    }
+    .img-card-details{
+        width: 40%;
+    }.text-card-details{
+        width:60%;
+        text-align: center;
+        font-family: 'Black Ops One', cursive, 'Roboto', sans-serif, 'Comic Neue', cursive, 'Caveat', cursive;
+        color: #e7e7e7;
+    }.text-card-details .cardBody{
+        width: 95%;
+        padding-left: 20px;
+        font-size: small;
+    }.text-card-details .cardTitle {
+        margin-bottom: 20px;
+        font-size: xx-large;
+        background: -webkit-linear-gradient(#ffffff, #272727);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+    }
+}

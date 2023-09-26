@@ -1,5 +1,6 @@
-import React, { useState} from "react";
+import React from "react";
 import './Main.css'
+import './Main-media-queries.css'
 import Jordan4 from './assets/img/air-jordan-4.png'
 import detalhe1Jordan from './assets/img/img-detalhe-air-jordan.png'
 import detalhe2Jordan from './assets/img/img-detalhe2-air-jordan.png'
@@ -105,10 +106,11 @@ const Main = ({ addProdutoCarrinho }) => {
                         imagemMarca={logoJordan}
                         imagemTenis={detalhe6Jordan}
                         nomeTenis='Infrared'
-                        valorTenis='1.200,00'
+                        valorTenis='1.499,00'
                         addProdutoCarrinho={addProdutoCarrinho}
                     />
                     <CardModelo
+
                         imagemMarca={logoJordan}
                         imagemTenis={detalhe7Jordan}
                         nomeTenis='Military'

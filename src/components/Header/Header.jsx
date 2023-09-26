@@ -7,12 +7,11 @@ const Header = props => {
 
     const { carrinho } = props
 
-    const abrirCarrinho = ()=>{
+    const abrirCarrinho = () => {
         document.querySelector('.favBag').addEventListener('click', () => {
             document.querySelector('.Carrinho').style.display = 'block'
             document.querySelector('.Carrinho').style.marginLeft = '0px'
-    })
-
+        })
     }
 
     return(

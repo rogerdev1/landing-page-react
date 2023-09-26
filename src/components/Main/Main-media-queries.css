@@ -1,0 +1,149 @@
+@media (min-width: 768px) and (max-width: 1150px){
+
+    main .firstRow{
+        padding: 210px 0px;
+        width: 100%;
+    }
+
+    main .leftSide{
+        width: 50%;
+        padding-left: 20px;
+
+    }
+
+    main .leftSide span.titleShoe{
+        font-size: 70px;
+    }main .leftSide span.titleShoe span.marcaShoe{
+        text-align: center;
+        padding-left: 0px;
+    }main .leftSide span.titleShoe span.modelShoe{
+        text-align: center;
+    }
+
+    main .rightSide{
+        width: 50%;
+        padding: 0 10px;
+    }
+    main .rightSide img{
+        min-width: 350px;
+    }
+
+
+
+    main .secondRow section {
+        display: flex; align-items: center;
+        width: 100%;
+    }
+    main .secondRow  .card-detalhe-design img,
+    main .secondRow .card-material img{
+        width: 350px;
+    }
+    main .secondRow  .card-cores,
+    main .secondRow  .card-material,
+    main .secondRow  .card-detalhe-design{
+        margin-top: -120px;
+    }
+    main .secondRow .card-design img{
+        transform: rotate(340deg);
+        margin-left: -80px;
+    }
+
+    .card-detalhe-design, .card-material{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+
+
+
+    main .thirddRow{
+        display: flex; flex-direction: column;
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #78020222;
+    }main .thirddRow section{
+        display: flex; align-items: center;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+
+}
+
+@media (max-width: 767.98px) {
+
+    main .firstRow{
+        flex-direction: column;
+        padding: 100px 0px;
+        width: 100%;
+    }
+    main .leftSide{
+        width: 95%;
+        padding-left: 0px;
+    }
+    main .leftSide span.titleShoe{ font-size: 41px; width: 100%;}
+    main .leftSide span.titleShoe span.marcaShoe{ text-align: center;}
+    main .leftSide span.titleShoe span.modelShoe{
+        font-size: 60px;
+        margin-top: 10px;
+        line-height: 100%;
+    }
+
+    main .leftSide .starShoe{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+        letter-spacing: 8px;
+
+    }
+    main .leftSide .describeShoe{ width: 91%; }
+    main .leftSide a.addCart{ margin: 15px 0px; }
+
+
+
+    main .rightSide{ width: 100%; }
+    main .rightSide img{ min-width: 250px; max-width: 400px; }
+
+
+
+    .titleSection{ font-size: 45px; }
+
+
+    main .secondRow section {
+        display: flex; align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main .secondRow  .card-cores,
+    main .secondRow  .card-material,
+    main .secondRow  .card-detalhe-design{
+        margin-top: 0px;
+    }
+
+    main .thirddRow{
+        display: flex; flex-direction: column;
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #78020222;
+    }main .thirddRow section{
+        display: flex; align-items: center;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+}
+@media (max-width: 400px) {
+    main .firstRow{
+        display: flex; flex-direction: column;
+        padding: 30px 0px 60px 0px;
+        width: 100%;
+    }
+    main .rightSide img{
+        min-width: 250px;
+        max-width: 400px;
+        animation: float 4s infinite ease-in-out;
+    }
+
+
+}

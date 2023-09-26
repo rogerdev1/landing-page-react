@@ -27,7 +27,7 @@ header div.firstRow i{
 }
 
 .favBagMobile i{
-    padding-left: 15px;
+    padding: 0 15px;
 }.favBag{
     display: none;
     cursor: pointer;
@@ -50,6 +50,7 @@ header .secondRow{
 header form{
     display: flex; align-items: center; justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 header form input.searchFormHeader{
@@ -61,11 +62,11 @@ header form input.searchFormHeader{
     width: 100%;
     background-color: rgba(128, 128, 128, 0.171);
 }
-form .fa-search{
+form label{
     color: gray;
     position: absolute;
-    top: 60px;
-    left: 20px;
+    top: 2px;
+    left: 5px;
     font-size: small;
 }
 

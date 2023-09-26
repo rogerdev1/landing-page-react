@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
-import Carrinho from './components/Carrinho/Carrinho';
+import ButtonTop from './components/ButtonTop/ButtonTop';
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
       <Header qtdCarrinho={qtdCarrinho} carrinho={carrinho}/>
       <Main addProdutoCarrinho={handleAddCarrinho}/>
       <Footer/>
+      <ButtonTop />
     </div>
   );
 }
