@@ -1,11 +1,10 @@
-import React from "react";
 import './ButtonTop.css'
 
 
 const ButtonTop = () => {
 
 
-    const scrollTop = () => {
+    const handleClick = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
@@ -16,7 +15,7 @@ const ButtonTop = () => {
 
 
     return (
-        <button className="ButtonTop" onClick={scrollTop}>
+        <button className="ButtonTop" onClick={handleClick}>
             <i className="fa-solid fa-arrow-up"></i>
         </button>
     )

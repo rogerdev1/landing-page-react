@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import './Header.css'
-import logoNike from './nike.png'
+import logoNike from '../../assets/img/nike.png'
 import Carrinho from '../Carrinho/Carrinho'
 
 const Header = props => {
@@ -12,17 +12,25 @@ const Header = props => {
             document.querySelector('.Carrinho').style.display = 'block'
             document.querySelector('.Carrinho').style.marginLeft = '0px'
         })
+
+        document.querySelector('.bi-bag').addEventListener('click', () => {
+            document.querySelector('.Carrinho').style.display = 'block'
+            document.querySelector('.Carrinho').style.marginLeft = '0px'
+        })
     }
 
+
+
+
     return(
-        <header>
+        <header id='Header'>
             <div className="firstRow">
                 <a href="https://www.nike.com.br/" className="areaLogo">
                     <img src={logoNike} alt="logo da marca" width='40px' />
                 </a>
                 <div className="favBagMobile">
                     <i className="fa-regular fa-heart"></i>
-                    <i class="bi bi-bag"></i>
+                    <i className="bi bi-bag" onClick={abrirCarrinho}></i>
                 </div>
                 <nav className="navbarHeader">
                     <i className="fa-solid fa-bars"></i>

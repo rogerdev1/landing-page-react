@@ -1,7 +1,7 @@
 import React from "react";
 import './Footer.css'
 import FotoCriador from './foto_perfil_.jpeg'
-import logoNike from 'D:/Users/eva-v/Documents/PROJETOS/Projeto_Web/Projetos Pessoais/Landing_Page/landing_page_1/src/assets/img/nike.png'
+import logoNike from '../../assets/img/nike.png'
 
 
 

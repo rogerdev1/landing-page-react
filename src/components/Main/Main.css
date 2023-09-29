@@ -51,7 +51,7 @@ main .leftSide .starShoe i{
     padding-right: 5px;
 }
 main .leftSide .describeShoe{
-    font-size: small;
+    font-size: medium;
 }
 main .leftSide a.addCart{
     border: none; border-radius: 20px;

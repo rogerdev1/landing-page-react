@@ -28,6 +28,7 @@ header div.firstRow i{
 
 .favBagMobile i{
     padding: 0 15px;
+    cursor: pointer;
 }.favBag{
     display: none;
     cursor: pointer;
@@ -38,6 +39,8 @@ header nav ul{
 }
 header nav .fa-bars{
     padding: 0px 15px;
+    cursor: pointer;
+
 }
 header nav ul li{
     padding: 0px 5px;

@@ -26,7 +26,7 @@ Footer .firstRow a{
 
 footer .firstRow .ajuda a,
 footer .firstRow .sobre a{
-    font-size: small;
+    font-size: medium;
 }
 
 footer .firstRow div:nth-child(2n+4){
@@ -73,6 +73,9 @@ footer .secondRow .redesCriador i{
     footer .firstRow{ flex-direction: column; }
     footer .firstRow div{margin: 10px 0; }
     footer .firstRow span{ margin-bottom: 5px; display: block;}
+    footer .firstRow .sobre a{
+        font-size: small;
+    }
 
     footer .secondRow{
         display: flex; align-items: center; justify-content: space-between;

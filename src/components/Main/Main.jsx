@@ -1,23 +1,25 @@
 import React from "react";
 import './Main.css'
 import './Main-media-queries.css'
-import Jordan4 from './assets/img/air-jordan-4.png'
-import detalhe1Jordan from './assets/img/img-detalhe-air-jordan.png'
-import detalhe2Jordan from './assets/img/img-detalhe2-air-jordan.png'
-import detalhe5Jordan from './assets/img/img-detalhe5-air-jordan.png'
-import detalhe4Jordan from './assets/img/img-detalhe4-air-jordan.png'
-import detalhe6Jordan from './assets/img/img-detalhe6-air-jordan.png'
-import detalhe7Jordan from './assets/img/img-detalhe7-air-jordan.png'
-import detalhe8Jordan from './assets/img/img-detalhe8-air-jordan.png'
-import logoJordan from './assets/img/jordan-2-logo-svgrepo-com.svg'
+import Jordan4 from '../../assets/img/air-jordan-4.png'
+import detalhe1Jordan from '../../assets/img/img-detalhe-air-jordan.png'
+import detalhe2Jordan from '../../assets/img/img-detalhe2-air-jordan.png'
+import detalhe5Jordan from '../../assets/img/img-detalhe5-air-jordan.png'
+import detalhe4Jordan from '../../assets/img/img-detalhe4-air-jordan.png'
+import detalhe6Jordan from '../../assets/img/img-detalhe6-air-jordan.png'
+import detalhe7Jordan from '../../assets/img/img-detalhe7-air-jordan.png'
+import detalhe8Jordan from '../../assets/img/img-detalhe8-air-jordan.png'
+import logoJordan from '../../assets/img/jordan-2-logo-svgrepo-com.svg'
 import CardModelo from "./CardModelo/CardModelo";
 import CardDetalhe from "./CardDetalhes/CardDetalhe";
 
 
 const Main = ({ addProdutoCarrinho }) => {
 
+
+
     return (
-        <main>
+        <main id="Main">
             <div className="firstRow">
                 <div className="leftSide">
                     <span className="titleShoe">

@@ -1,6 +1,6 @@
 import React from "react";
 import './Carrinho.css'
-import imagemLogo from './nike.svg'
+import imagemLogo from '../../assets/img/nike.svg'
 
 const Carrinho = ({ items }) => {
 

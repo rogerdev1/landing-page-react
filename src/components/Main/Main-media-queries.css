@@ -96,7 +96,7 @@
         letter-spacing: 8px;
 
     }
-    main .leftSide .describeShoe{ width: 91%; }
+    main .leftSide .describeShoe{ width: 91%; font-size: small;}
     main .leftSide a.addCart{ margin: 15px 0px; }
 
 
